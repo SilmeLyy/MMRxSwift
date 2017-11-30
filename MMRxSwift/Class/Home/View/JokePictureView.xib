@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JokePictureView" customModule="MMRxSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="262" height="266"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a4f-pB-OtS">
+                    <rect key="frame" x="0.0" y="0.0" width="262" height="266"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwT-mP-db8">
+                    <rect key="frame" x="0.0" y="223" width="262" height="43"/>
+                    <state key="normal" title="点击查看大图" image="see-big-picture" backgroundImage="see-big-picture-background"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="a4f-pB-OtS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Elo-Bt-a4v"/>
+                <constraint firstAttribute="trailing" secondItem="wwT-mP-db8" secondAttribute="trailing" id="IFV-Rg-gvi"/>
+                <constraint firstItem="wwT-mP-db8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Qbg-wY-l2o"/>
+                <constraint firstItem="a4f-pB-OtS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Qu3-Fm-1Ex"/>
+                <constraint firstAttribute="bottom" secondItem="wwT-mP-db8" secondAttribute="bottom" id="auw-h1-PL3"/>
+                <constraint firstAttribute="trailing" secondItem="a4f-pB-OtS" secondAttribute="trailing" id="o5r-mO-JJo"/>
+                <constraint firstAttribute="bottom" secondItem="a4f-pB-OtS" secondAttribute="bottom" id="zl0-Zo-L0y"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bigImageBtn" destination="wwT-mP-db8" id="757-WQ-iFz"/>
+                <outlet property="imageView" destination="a4f-pB-OtS" id="OuE-0X-an5"/>
+            </connections>
+            <point key="canvasLocation" x="-1" y="-340"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="see-big-picture" width="19" height="19"/>
+        <image name="see-big-picture-background" width="285" height="43"/>
+    </resources>
+</document>

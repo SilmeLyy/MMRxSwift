@@ -49,7 +49,6 @@ extension Observable where E == YYResult {
     }
     
     func mapArrModel<T: Mappable>(_ Type: T.Type) -> Observable<[T]>{
-
         return self.map { (result) in
             guard let array = result.data as? [Any] else {
                 throw YYError.ToModelError

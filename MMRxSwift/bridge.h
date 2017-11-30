@@ -13,6 +13,8 @@
 @import SwiftyJSON;
 @import ObjectMapper;
 @import MJRefresh;
+@import Kingfisher;
+@import SDWebImage;
 
 #ifndef bridge_h
 #define bridge_h

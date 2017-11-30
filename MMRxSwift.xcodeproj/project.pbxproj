@@ -38,8 +38,15 @@
 		685DCED61F0B2F07008079F5 /* JokesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685DCED51F0B2F07008079F5 /* JokesViewModel.swift */; };
 		685DCED81F0B36A8008079F5 /* UITableView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685DCED71F0B36A8008079F5 /* UITableView+Rx.swift */; };
 		685DCEDA1F0B3844008079F5 /* MJRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 685DCED91F0B3844008079F5 /* MJRefresh.framework */; };
+		68A895DB1F17507F005F697D /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A895DA1F17507F005F697D /* Tree.swift */; };
 		68BAE37C1F064A5200BDB39A /* NetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BAE37B1F064A5200BDB39A /* NetWork.swift */; };
 		68BAE3811F0A233D00BDB39A /* Jokes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BAE3801F0A233D00BDB39A /* Jokes.swift */; };
+		68CB0D1A1F0CDC5800ADC137 /* JokePictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB0D191F0CDC5800ADC137 /* JokePictureView.swift */; };
+		68CB0D1C1F0CDC6A00ADC137 /* JokePictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68CB0D1B1F0CDC6A00ADC137 /* JokePictureView.xib */; };
+		68CB0D1E1F0CDD2000ADC137 /* JokeVoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB0D1D1F0CDD2000ADC137 /* JokeVoiceView.swift */; };
+		68CB0D201F0CDD2A00ADC137 /* JokeVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68CB0D1F1F0CDD2A00ADC137 /* JokeVoiceView.xib */; };
+		68CB0D221F0CDD4300ADC137 /* JokeVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CB0D211F0CDD4300ADC137 /* JokeVideoView.swift */; };
+		68CB0D241F0CDD5900ADC137 /* JokeVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68CB0D231F0CDD5900ADC137 /* JokeVideoView.xib */; };
 		68D22EF71F024084001E41FA /* ThredViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D22EF61F024084001E41FA /* ThredViewModel.swift */; };
 		8AEEE2C3210472472A070AD4 /* Pods_MMRxSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E70016DB3052B833826CCF8 /* Pods_MMRxSwiftUITests.framework */; };
 /* End PBXBuildFile section */
@@ -103,8 +110,15 @@
 		685DCED51F0B2F07008079F5 /* JokesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokesViewModel.swift; sourceTree = "<group>"; };
 		685DCED71F0B36A8008079F5 /* UITableView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Rx.swift"; sourceTree = "<group>"; };
 		685DCED91F0B3844008079F5 /* MJRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MJRefresh.framework; path = "../../../Library/Developer/Xcode/DerivedData/MMRxSwift-gymybdwkhgnqshbeuyuuwbfxcrto/Build/Products/Debug-iphonesimulator/MJRefresh/MJRefresh.framework"; sourceTree = "<group>"; };
+		68A895DA1F17507F005F697D /* Tree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		68BAE37B1F064A5200BDB39A /* NetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWork.swift; sourceTree = "<group>"; };
 		68BAE3801F0A233D00BDB39A /* Jokes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jokes.swift; sourceTree = "<group>"; };
+		68CB0D191F0CDC5800ADC137 /* JokePictureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokePictureView.swift; sourceTree = "<group>"; };
+		68CB0D1B1F0CDC6A00ADC137 /* JokePictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JokePictureView.xib; sourceTree = "<group>"; };
+		68CB0D1D1F0CDD2000ADC137 /* JokeVoiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeVoiceView.swift; sourceTree = "<group>"; };
+		68CB0D1F1F0CDD2A00ADC137 /* JokeVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JokeVoiceView.xib; sourceTree = "<group>"; };
+		68CB0D211F0CDD4300ADC137 /* JokeVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeVideoView.swift; sourceTree = "<group>"; };
+		68CB0D231F0CDD5900ADC137 /* JokeVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JokeVideoView.xib; sourceTree = "<group>"; };
 		68D22EF61F024084001E41FA /* ThredViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThredViewModel.swift; sourceTree = "<group>"; };
 		7E70016DB3052B833826CCF8 /* Pods_MMRxSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMRxSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D1DF1827A96F5DDBF16E42 /* Pods-MMRxSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMRxSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMRxSwiftTests/Pods-MMRxSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -264,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				68BAE3801F0A233D00BDB39A /* Jokes.swift */,
+				68A895DA1F17507F005F697D /* Tree.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -281,6 +296,12 @@
 			children = (
 				685DCED11F0B2E95008079F5 /* JokeTableViewCell.swift */,
 				685DCED21F0B2E95008079F5 /* JokeTableViewCell.xib */,
+				68CB0D191F0CDC5800ADC137 /* JokePictureView.swift */,
+				68CB0D1B1F0CDC6A00ADC137 /* JokePictureView.xib */,
+				68CB0D1D1F0CDD2000ADC137 /* JokeVoiceView.swift */,
+				68CB0D1F1F0CDD2A00ADC137 /* JokeVoiceView.xib */,
+				68CB0D211F0CDD4300ADC137 /* JokeVideoView.swift */,
+				68CB0D231F0CDD5900ADC137 /* JokeVideoView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -501,6 +522,7 @@
 				TargetAttributes = {
 					684FF2A21F00ED5D00F5B57C = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3E9UNKNEV7;
 						ProvisioningStyle = Automatic;
 					};
 					684FF2B61F00ED5D00F5B57C = {
@@ -540,10 +562,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68CB0D201F0CDD2A00ADC137 /* JokeVoiceView.xib in Resources */,
 				684FF2B11F00ED5D00F5B57C /* LaunchScreen.storyboard in Resources */,
 				683584041F010DC20051DBA1 /* Assets.xcassets in Resources */,
 				685DCED41F0B2E95008079F5 /* JokeTableViewCell.xib in Resources */,
+				68CB0D1C1F0CDC6A00ADC137 /* JokePictureView.xib in Resources */,
 				684FF2AC1F00ED5D00F5B57C /* Main.storyboard in Resources */,
+				68CB0D241F0CDD5900ADC137 /* JokeVideoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,7 +739,10 @@
 				683583F91F010A3D0051DBA1 /* BaseNavgationViewController.swift in Sources */,
 				684FF2ED1F00F11200F5B57C /* BaseViewObject.swift in Sources */,
 				685DCED31F0B2E95008079F5 /* JokeTableViewCell.swift in Sources */,
+				68CB0D221F0CDD4300ADC137 /* JokeVideoView.swift in Sources */,
+				68CB0D1E1F0CDD2000ADC137 /* JokeVoiceView.swift in Sources */,
 				683583FD1F010B3A0051DBA1 /* SecondViewController.swift in Sources */,
+				68A895DB1F17507F005F697D /* Tree.swift in Sources */,
 				683583FB1F010B260051DBA1 /* HomeViewController.swift in Sources */,
 				68BAE37C1F064A5200BDB39A /* NetWork.swift in Sources */,
 				684362301F037C78001E6750 /* RealmViewController.swift in Sources */,
@@ -726,6 +754,7 @@
 				684FF2A71F00ED5D00F5B57C /* AppDelegate.swift in Sources */,
 				684FF2EB1F00F0F400F5B57C /* BaseObject.swift in Sources */,
 				683583F51F0109D90051DBA1 /* BaseTabBarViewController.swift in Sources */,
+				68CB0D1A1F0CDC5800ADC137 /* JokePictureView.swift in Sources */,
 				6819DFC11F0504FB008EEC9F /* RxTableViewSectionedReloadDataSource.swift in Sources */,
 				68D22EF71F024084001E41FA /* ThredViewModel.swift in Sources */,
 			);
@@ -882,6 +911,7 @@
 			baseConfigurationReference = C39D11C03E8C9DC7F2690B95 /* Pods-MMRxSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3E9UNKNEV7;
 				INFOPLIST_FILE = MMRxSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lyy.MMRxSwift;
@@ -896,6 +926,7 @@
 			baseConfigurationReference = F3AB2C99A322C1C19167C033 /* Pods-MMRxSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3E9UNKNEV7;
 				INFOPLIST_FILE = MMRxSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lyy.MMRxSwift;

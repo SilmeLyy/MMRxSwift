@@ -21,7 +21,7 @@ class JokesViewModel: BaseViewObject, RxTableViewDataSourceType{
     typealias Element = [Joke]
     
     ///数据源
-    var dataSource = Variable<[Joke]>([])
+    var dataSource = BehaviorSubject<[Joke]>(value: [])
     var list       = [Joke]()
     private var maxtime = ""
     private var page: Int = 1
@@ -51,41 +51,32 @@ class JokesViewModel: BaseViewObject, RxTableViewDataSourceType{
     
     //获取数据
     func getDataSource(_ isRefresh: Bool) {
-        if isRefresh {
-            NetWork.request(N: .GetNews(maxtime: maxtime, type: type.rawValue, page: page))
-            .mapModel(Jokes.self)
-            .map({ (jok) -> [Joke] in
-                self.maxtime = jok.info?.maxtime ?? ""
-                self.refreshStatus.value = .None
-                return jok.list ?? []
-            }).subscribe(onNext: { (jokes) in
-                self.dataSource.value = jokes
-            }, onError: { (error) in
-                self.refreshStatus.value = .None
-            }, onCompleted: { 
-                self.refreshStatus.value = .None
-            }, onDisposed: { 
-                
-            }).addDisposableTo(disposeBag)
-        }
-        else{
-            NetWork.request(N: .GetNews(maxtime: maxtime, type: type.rawValue, page: page))
-            .mapModel(Jokes.self)
-            .map({ (jok) -> [Joke] in
-                self.maxtime = jok.info?.maxtime ?? ""
-                self.refreshStatus.value = .None
-                return jok.list ?? []
-            }).subscribe(onNext: { (jokes) in
+        NetWork.request(N: .GetNews(maxtime: maxtime, type: type.rawValue, page: page))
+        .mapModel(Jokes.self)
+        .map({ (jok) -> [Joke] in
+            self.maxtime = jok.info?.maxtime ?? ""
+            self.refreshStatus.value = .None
+            return jok.list ?? []
+        }).subscribe(onNext: { (jokes) in
+            if isRefresh {
+                self.dataSource.onNext(jokes)
+            }
+            else{
                 let arr = self.dataSource.value
-                self.dataSource.value = arr + jokes
-            }, onError: { (error) in
-                self.refreshStatus.value = .None
-            }, onCompleted: {
-                self.refreshStatus.value = .None
-            }, onDisposed: {
-                
-            }).addDisposableTo(disposeBag)
-        }
+                do{
+                    self.dataSource.onNext(try arr() + jokes);
+                }catch{
+                    self.dataSource.onError(error)
+                }
+            }
+        }, onError: { (error) in
+            self.refreshStatus.value = .None
+            self.dataSource.onError(error)
+        }, onCompleted: { 
+            self.refreshStatus.value = .None
+        }, onDisposed: { 
+            
+        }).addDisposableTo(disposeBag)
     }
     
     func setDataSource(_ data: [Joke]) {

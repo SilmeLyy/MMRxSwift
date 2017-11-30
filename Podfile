@@ -13,6 +13,8 @@ target 'MMRxSwift' do
   pod 'SwiftyJSON'
   pod 'ObjectMapper', '~> 2.2'
   pod 'MJRefresh', '~> 3.1.12'
+  pod 'Kingfisher', '~> 3.10.1'
+  pod 'SDWebImage', '~> 4.0.0'
   
   target 'MMRxSwiftTests' do
     inherit! :search_paths

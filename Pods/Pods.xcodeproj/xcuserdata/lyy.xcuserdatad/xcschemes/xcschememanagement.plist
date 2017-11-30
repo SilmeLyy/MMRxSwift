@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Kingfisher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -54,6 +59,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SnapKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,12 +77,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0DA59209F96F4F009A6FE867ECA78225</key>
+		<key>16F69644FAAFC8C08A4FCBAF97702AD0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2C8D9C4F0A8F847792688A9E7EF79953</key>
+		<key>23DE7A093768BB0A53D00F3D8B205FC5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2F0C0F810568D3E82219429D9D870F04</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,7 +97,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>611894697E85B2F18B8B3E168312D13F</key>
+		<key>4E2493D8B3901DC492CF6D85F6200634</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,7 +112,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AA963720A375A0429EFE41E71E6B9EF2</key>
+		<key>8C762D9456D0D0159082EECC1E6F2591</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ADE6C003016A6C4B2EA5F2C2753C5AE0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -117,12 +137,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F0D2D215C5186BDC99B57E8AED2720A2</key>
+		<key>EF452958260F9CA1D454E8C522205593</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FC32E007FBB6F5A738784B7DA0E69F33</key>
+		<key>F0D2D215C5186BDC99B57E8AED2720A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
